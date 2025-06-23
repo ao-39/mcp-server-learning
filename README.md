@@ -4,7 +4,7 @@ MCP（Model Context Protocol）サーバーの開発を学習するためのType
 
 ## 概要
 
-このプロジェクトは、MCP（Model Context Protocol）の概念を理解し、実際にサーバーを開発するためのハンズオン学習環境を提供します。TypeScriptを使用してMCPサーバーの基本的な実装を学びます。
+このプロジェクトは、MCP（Model Context Protocol）の概念を理解し、実際にサーバーを開発するためのハンズオン学習環境を提供します。TypeScriptを使用してMCP（Model Context Protocol）サーバーの基本的な実装を学びます。
 
 ## 技術スタック
 
@@ -31,6 +31,8 @@ cd mcp-server-learning
 2. 依存関係をインストール
 ```bash
 npm install
+# または
+yarn install
 ```
 
 ## 開発コマンド
@@ -50,6 +52,14 @@ npx tsc
 npx tsc --noEmit
 ```
 
+### テスト実行
+```bash
+npm test
+# または
+yarn test
+```
+*注: 現在テストは設定されていません*
+
 ## プロジェクト構造
 
 ```
@@ -59,7 +69,7 @@ mcp-server-learning/
 ├── node_modules/         # 依存関係
 ├── package.json          # プロジェクト設定
 ├── tsconfig.json         # TypeScript設定
-├── CLAUDE.md            # Claude Code向けドキュメント
+├── CLAUDE.md            # Claude Code用の開発支援ドキュメント
 └── README.md            # このファイル
 ```
 
@@ -73,7 +83,7 @@ mcp-server-learning/
 
 ## 学習目標
 
-1. MCPプロトコルの基本概念の理解
+1. MCP（Model Context Protocol）の基本概念の理解
 2. TypeScriptでのサーバー実装
 3. 型安全なコード開発
 4. Node.js環境でのMCPサーバー運用
@@ -84,4 +94,4 @@ mcp-server-learning/
 
 ## ライセンス
 
-ISC
+このプロジェクトは[ISCライセンス](https://opensource.org/licenses/ISC)の下で公開されています。詳細については、package.jsonファイルを参照してください。
