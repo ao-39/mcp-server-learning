@@ -94,4 +94,4 @@ mcp-server-learning/
 
 ## ライセンス
 
-このプロジェクトは[ISCライセンス](https://opensource.org/licenses/ISC)の下で公開されています。詳細については、package.jsonファイルを参照してください。
+ISC
