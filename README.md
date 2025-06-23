@@ -18,7 +18,7 @@ MCP（Model Context Protocol）サーバーの開発を学習するためのType
 ### 前提条件
 
 - Node.js (v14以上推奨)
-- npm または yarn
+- pnpm (推奨)
 
 ### セットアップ
 
@@ -30,9 +30,7 @@ cd mcp-server-learning
 
 2. 依存関係をインストール
 ```bash
-npm install
-# または
-yarn install
+pnpm install
 ```
 
 ## 開発コマンド
@@ -54,9 +52,7 @@ npx tsc --noEmit
 
 ### テスト実行
 ```bash
-npm test
-# または
-yarn test
+pnpm test
 ```
 *注: 現在テストは設定されていません*
 
