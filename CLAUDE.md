@@ -73,11 +73,16 @@ This project follows a structured workflow for handling issues and pull requests
    - Make incremental changes and commit frequently
    - Push changes regularly to keep PR updated
    - Add PR comments to document progress and decisions
+   - Use gitmoji and Japanese commit messages
    
    ```bash
    # Make changes, then:
    git add .
-   git commit -m "Descriptive commit message"
+   git commit -m "✨ 新機能を追加"
+   # or
+   git commit -m "🐛 バグを修正"
+   # or 
+   git commit -m "📝 ドキュメントを更新"
    git push
    
    # Update PR with progress:
