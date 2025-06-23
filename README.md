@@ -92,6 +92,3 @@ mcp-server-learning/
 
 このプロジェクトは学習目的で作成されています。改善提案やバグ報告は、GitHubのIssuesでお知らせください。
 
-## ライセンス
-
-ISC
