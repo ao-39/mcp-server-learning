@@ -40,3 +40,58 @@ npx tsc --noEmit
 - **Module system:** CommonJS
 - **Strict mode:** Enabled for all type checking
 - **Source map support:** Available but not currently enabled
+
+## Issue Management and PR Workflow
+
+This project follows a structured workflow for handling issues and pull requests using GitHub CLI:
+
+### Issue Creation and PR Workflow
+
+1. **Create Issue** (in Japanese):
+   ```bash
+   gh issue create --title "日本語タイトル" --body "詳細内容"
+   ```
+
+2. **Create Branch** (in English, including issue number):
+   ```bash
+   git checkout -b feature/issue-{number}-brief-description
+   # Example: feature/issue-3-add-authentication
+   ```
+
+3. **Create Empty Commit and Push**:
+   ```bash
+   git commit --allow-empty -m "Empty commit for issue #{number}"
+   git push -u origin feature/issue-{number}-brief-description
+   ```
+
+4. **Create Pull Request** (in Japanese):
+   ```bash
+   gh pr create --title "日本語PRタイトル" --body "PR description with issue reference"
+   ```
+
+5. **Development Process**:
+   - Make incremental changes and commit frequently
+   - Push changes regularly to keep PR updated
+   - Add PR comments to document progress and decisions
+   
+   ```bash
+   # Make changes, then:
+   git add .
+   git commit -m "Descriptive commit message"
+   git push
+   
+   # Update PR with progress:
+   gh pr comment {pr-number} --body "## 進捗更新\n- 実装した機能\n- 次のステップ"
+   ```
+
+6. **Update Progress via PR Comments**:
+   ```bash
+   gh pr comment {pr-number} --body "Progress update message"
+   ```
+
+### Workflow Benefits
+
+- **Traceability**: Issue numbers in branch names provide clear connection
+- **Early Visibility**: Empty commits and immediate PRs make work visible
+- **Continuous Updates**: Regular PR comments keep stakeholders informed
+- **Japanese-first**: Issues and PRs use Japanese for better local context, with English branch names for Git convention
